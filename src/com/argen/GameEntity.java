@@ -4,12 +4,11 @@ public class GameEntity {
     private int Health;
     private int Damage;
 
+
     public GameEntity(int health, int damage) {
         Health = health;
         Damage = damage;
     }
-
-
 
     public int getHealth() {
         return Health;

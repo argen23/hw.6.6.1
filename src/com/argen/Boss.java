@@ -1,7 +1,14 @@
 package com.argen;
 
-public class Boss extends GameEntity{
+public class Boss extends GameEntity {
     Weapon Boss;
+
+    public String printInfo() {
+        return getBoss().getHouseHold() + "\n" + getBoss().getSteelArms() +
+                "\n" + getBoss().getRifle() +
+                " \nHealth: " + getHealth() + " \nDamage : " +
+                getDamage();
+    }
 
 
     public Boss(int health, int damage, Weapon boss) {

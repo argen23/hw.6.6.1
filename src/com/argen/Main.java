@@ -4,13 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Boss boss = new Boss(330,50 , new Weapon("Ak47" , "Knife","Cable") );
+        Boss boss = new Boss(330, 50, new Weapon("Ak47", "Knife", "Cable"));
+        Sceleton sceleton1 = new Sceleton(300, 20, new Weapon("Arrow", "ArrowBow", "fireBow"));
+        Sceleton sceleton2 = new Sceleton(400, 30, new Weapon("Arrow", "ArrowBow", "coldBow"));
 
 
-        System.out.println(" damage: " + boss.getDamage() + " \n health: " + boss.getHealth() + "  \n Weapon " +
-                boss.getBoss().getHouseHold() + " " + boss.getBoss().getRifle() +  "  " + " \n "  +
-                boss.getBoss().getSteelArms());
-
+        System.out.println("\n"+boss.printInfo() + " \n\n " + sceleton1.printInfo() +" \n\n " + sceleton2.printInfo());
     }
 }
 //#ДЗ
@@ -18,7 +17,7 @@ public class Main {
 //Создать класс GameEntity (Игровая сущность), выделить все общие поля которые присущи и Боссу и Героям и добавить геттеры и сеттеры к ним.
 //Создать класс Босса, наследовать его от класса GameEntity и дополнить его полем сложного типа данных Weapon (то есть дать оружие боссу).
 //Также добавить геттеры и сеттеры для этого поля.
-//В классе Main создать 1 экземпляр босса и задать ему все свойства (значения полям). Затем распечатать всю информацию о боссе.
+//В классе Main создать 1 экземпляр босса и задать ему все свойства (значения полям).Затем распечатать всю информацию о боссе.
 //ДЗ/ на сообразительность:
 //Распечатывание информации сделать в методе в классе Босса public String printInfo(){}
 //Создать класс Скелетов, унаследовать от Босса.

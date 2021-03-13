@@ -2,15 +2,10 @@ package com.argen;
 
 public class Weapon {
 
+
     private String rifle;
     private String steelArms;
     private String houseHold;
-
-    public Weapon(String rifle, String steelArms, String houseHold) {
-        this.rifle = rifle;
-        this.steelArms = steelArms;
-        this.houseHold = houseHold;
-    }
 
     public String getRifle() {
         return rifle;
@@ -34,5 +29,12 @@ public class Weapon {
 
     public void setHouseHold(String houseHold) {
         this.houseHold = houseHold;
+    }
+
+    public Weapon(String rifle, String steelArms, String houseHold) {
+        this.rifle = rifle;
+        this.steelArms = steelArms;
+        this.houseHold = houseHold;
+
     }
 }
